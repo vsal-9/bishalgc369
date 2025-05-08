@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishal G.C | Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Floating Action Button -->
+    <div class="floating-action-btn">
+        <button id="contact-fab" aria-label="Contact me">
+            <i class="fas fa-envelope"></i>
+        </button>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="code-lines"></div>
+        <div id="matrix-canvas"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <!-- <div class="terminal"> -->
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <!-- <span class="terminal-button close"></span> -->
+                    <!-- <span class="terminal-button minimize"></span> -->
+                    <!-- <span class="terminal-button maximize"></span> -->
+                </div>
+                <!-- <div class="terminal-title">kali@terminal:~</div> -->
+            </div>
+            <div class="terminal-content">
+                <div class="terminal-line">root@kali:~# <span class="typing-text">Loading portfolio...</span></div>
+                <div class="terminal-line progress-line">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="terminal-line">root@kali:~# <span class="typing-text-2">Initializing system components...</span></div>
+                <div class="terminal-line">root@kali:~# <span class="typing-text-3">Starting services...</span></div>
+                <div class="terminal-line">root@kali:~# <span class="typing-text-4">Launching interface...</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="kali-logo">
+                    <!-- <img src="https://www.kali.org/images/kali-dragon-icon.svg" alt="Kali Linux Logo"> -->
+                </div>
+            </div>
+            
+            <div class="profile-brief">
+                <div class="profile-image-small">
+                    <img src="vsal.jpg" alt="Profile Image">
+                </div>
+                <div class="profile-name">
+                    <h3>Bishal G.C</h3>
+                    <p>Python Developer</p>
+                </div>
+            </div>
+            
+            <div class="sidebar-menu">
+                <h3>Navigation</h3>
+                <ul>
+                    <li class="menu-item active" data-target="about">
+                        <i class="fas fa-flag"></i>
+                        <span >About</span>
+                    </li>
+                    <li class="menu-item" data-target="skills">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Skills</span>
+                    </li>
+                    
+                    <li class="menu-item" data-target="projects">
+                        <i class="fas fa-code"></i>
+                        <span>Projects</span>
+                    </li>
+                    </li>
+                    <li class="menu-item" data-target="experience">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Experience</span>
+                    </li>
+                    <li class="menu-item" data-target="contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </li>
+                </ul>
+                <h3>Social Links</h3>
+                <ul>
+                    <li class="menu-item">
+                        <a href="https://np.linkedin.com/in/vsal-gc-5b048635a" target="_blank" style="text-decoration: none; color: inherit;">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://github.com/vsal-9/vsal" target="_blank" style="text-decoration: none; color: inherit;">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="sidebar-footer">
+                <a href="resume.pdf" download class="download-resume-btn">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-button close"></span>
+                        <span class="terminal-button minimize"></span>
+                        <span class="terminal-button maximize"></span>
+                    </div>
+                    <div class="terminal-title">Bishal@portfolio:~</div>
+                </div>
+                
+                <div class="terminal-content-main">
+                    <!-- About Section -->
+                    <section id="about" class="content-section">
+                        <div class="section-header">
+                            <h2 class="typing-header">root@kali:~# <span class="command">cat about.txt</span></h2>
+                        </div>
+                        <div class="profile-container scroll-reveal">
+                            <div class="profile-info">
+                                <h1>Bishal G.C</h1>
+                                <h3>Full Stack Developer</h3>
+                                <div class="brand-statement">
+                                    <p>The future belongs to AI, and those equipped with skills will shape it</p>
+                                </div>
+                                <p>I am a tech enthusiast and a passionate individual with a dream of becoming an AI specialist. My goal is to make a substantial difference in the field of artificial intelligence by developing systems that exhibit more human-like intelligence, bridging the gap between machines and natural cognition.. Welcome to my portfolio—where my skills meet my passion! </p>
+                                <div class="cta-buttons">
+                                    <a href="resume.pdf" download class="download-resume-btn">
+                                        <i class="fas fa-download"></i> Resume
+                                    </a>
+                                    
+                                    
+                                    <!-- <button class="contact-btn" data-target="contact"><span>contact me</span> <i class="fas fa-paper-plane"></i></button> -->
+                                    <li class="contact-btn" data-target="contact">
+                                        <span>Contact me</span>
+                                        <i class="fas fa-paper-plane"></i>
+                                    </li>
+                                    
+                                </div>
+                            </div>
+                            <div class="profile-image">
+                                <img src="vsal.jpg" alt="Profile Image">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Skills Section -->
+                    <section id="skills" class="content-section">
+                        <div class="section-header">
+                            <h2 class="typing-header">root@kali:~# <span class="command">ls -la skills/</span></h2>
+                        </div>
+                        <div class="skills-container scroll-reveal">
+                            <h3 class="section-title">Technical Proficiency</h3>
+                            
+                            <div class="skill-categories">
+                                <div class="skill-category-tabs">
+                                    <button class="skill-tab active" data-category="frontend">Frontend</button>
+                                    <button class="skill-tab" data-category="backend">Backend</button>
+                                </div>
+                                
+                                <div class="skill-category-content">
+                                    <div class="skill-category active" data-category="frontend">
+                                        <div class="skill-meters">
+                                            <div class="skill-meter">
+                                                <div class="skill-info">
+                                                    <span>HTML/CSS</span>
+                                                    <span>95%</span>
+                                                </div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 95%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-meter">
+                                                <div class="skill-info">
+                                                    <span>JavaScript</span>
+                                                    <span>90%</span>
+                                                </div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 90%"></div>
+                                                </div>
+                                            </div>
+                                             <div class="skill-meter">
+                                                <!-- <div class="skill-info">
+                                                    <span>React</span>
+                                                    <span>85%</span>
+                                                </div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 85%"></div>
+                                                </div> -->
+                                            </div> 
+                                            <div class="skill-meter">
+                                                 <div class="skill-info">
+                                                    <span>TypeScript</span>
+                                                    <span>80%</span>
+                                                </div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 80%"></div>
+                                                </div> 
+                                            </div>
+                                        </div> 
+                                        
+                                        <div class="skills-grid">
+                                            <div class="skill-card">
+                                                <div class="skill-icon html">
+                                                    <i class="fab fa-html5"></i>
+                                                </div>
+                                                <h4>HTML</h4>
+                                            </div>
+                                            <div class="skill-card">
+                                                <div class="skill-icon css">
+                                                    <i class="fab fa-css3-alt"></i>
+                                                </div>
+                                                <h4>CSS/SCSS</h4>
+                                            </div>
+                                            <div class="skill-card">
+                                                <div class="skill-icon js">
+                                                    <i class="fab fa-js"></i>
+                                                </div>
+                                                <h4>JavaScript</h4>
+                                            </div>
+                                            <div class="skill-card">
+                                                <div class="skill-icon ts">
+                                                    <i class="fab fa-js"></i>
+                                                </div>
+                                                <h4>TypeScript</h4>
+                                            </div>
+                                            <!-- <div class="skill-card">
+                                                <div class="skill-icon react">
+                                                    <i class="fab fa-react"></i>
+                                                </div>
+                                                <h4>React</h4>
+                                            </div> -->
+                                            <!-- <div class="skill-card">
+                                                <div class="skill-icon angular">
+                                                    <i class="fab fa-angular"></i>
+                                                </div>
+                                                <h4>Angular</h4>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-category" data-category="backend">
+                                        <div class="skill-meters">
+                                            <div class="skill-meter">
+                                                <div class="skill-info">
+                                                    <span>C</span>
+                                                    <span>65%</span>
+                                                </div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 65%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-meter">
+                                                <div class="skill-info">
+                                                    <span>Python</span>
+                                                    <span>80%</span>
+                                                </div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 80%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-meter">
+                                                <div class="skill-info">
+                                                    <span>SQL</span>
+                                                    <span>75%</span>
+                                                </div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="skills-grid">
+                                            <div class="skill-card">
+                                                <div class="skill-icon node">
+                                                    <i class="fab fa-c"></i>
+                                                </div>
+                                                <h4>C</h4>
+                                            </div>
+                                            <div class="skill-card">
+                                                <div class="skill-icon python">
+                                                    <i class="fab fa-python"></i>
+                                                </div>
+                                                <h4>Python</h4>
+                                            </div>
+                                            <div class="skill-card">
+                                                <div class="skill-icon database">
+                                                    <i class="fas fa-database"></i>
+                                                </div>
+                                                <h4>SQL</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Projects Section -->
+                    <section id="projects" class="content-section">
+                        <div class="section-header">
+                            <h2 class="typing-header">root@kali:~# <span class="command">find / -name "projects" -type d</span></h2>
+                        </div>
+                        <div class="projects-container scroll-reveal">
+                            <h3 class="section-title">My Projects</h3>
+                            
+                            <div class="project-filters">
+                                <button class="filter-btn active" data-filter="all">All</button>
+                                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                                <button class="filter-btn" data-filter="backend">Backend</button>
+                                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                                <button class="filter-btn" data-filter="security">Security</button>
+                            </div>
+                            
+                            <div class="projects-grid">
+                                <div class="project-card" data-categories="frontend,fullstack">
+                                    <div class="project-header">
+                                        <h3>Alpha Medical Assistant</h3>
+                                    </div>
+                                    <p>Developed a smart medical assistant platform for doctors and students, focusing on diagnostic support and X-ray image processing.</p>
+                                    <div class="project-metrics">
+                                        <div class="metric">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <span>50% faster diagnosis</span>
+                                        </div>
+                                        <div class="metric">
+                                            <i class="fas fa-users"></i>
+                                            <span>10,000+ users</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-tech">
+                                        <span>Angular</span>
+                                        <span>PrimeNG</span>
+                                        <span>Responsive Design</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <button class="open-btn">View Project</button>
+                                        <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="project-card" data-categories="frontend,fullstack">
+                                    <div class="project-header">
+                                        <h3>RoadTrust</h3>
+                                    </div>
+                                    <p>Designed and developed a cryptocurrency staking platform enabling users to manage high-yield crypto investments.</p>
+                                    <div class="project-metrics">
+                                        <div class="metric">
+                                            <i class="fas fa-chart-line"></i>
+                                            <span>25% user growth</span>
+                                        </div>
+                                        <div class="metric">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <span>15% lower bounce rate</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-tech">
+                                        <span>Angular</span>
+                                        <span>PrimeNG</span>
+                                        <span>Cryptocurrency</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <button class="open-btn">View Project</button>
+                                        <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="project-card" data-categories="security,backend">
+                                    <div class="project-header">
+                                        <h3>SecureNet Scanner</h3>
+                                    </div>
+                                    <p>Built an automated network vulnerability scanner that identifies security weaknesses in corporate networks.</p>
+                                    <div class="project-metrics">
+                                        <div class="metric">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <span>98% detection rate</span>
+                                        </div>
+                                        <div class="metric">
+                                            <i class="fas fa-clock"></i>
+                                            <span>75% faster than manual audits</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-tech">
+                                        <span>Python</span>
+                                        <span>Kali Linux</span>
+                                        <span>Network Security</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <button class="open-btn">View Project</button>
+                                        <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                   
+
+                    <!-- Experience Section -->
+                    <section id="experience" class="content-section">
+                        <div class="section-header">
+                            <h2 class="typing-header">root@kali:~# <span class="command">grep -r "experience" /var/log/</span></h2>
+                        </div>
+                        <div class="experience-container scroll-reveal">
+                            <h3 class="section-title">Professional Experience</h3>
+                            
+                            <div class="timeline">
+                                <div class="job-cards">
+                                    <div class="job-card">
+                                        <div class="timeline-dot"></div>
+                                        <div class="job-header">
+                                            <div class="company-logo">
+                                                <img src="/placeholder.svg?height=60&width=60" alt="i4Twins Logo">
+                                            </div>
+                                            <div class="company-info">
+                                                <h3>Crushding Studio</h3>
+                                                <p class="job-date">March 2025 - Present</p>
+                                            </div>
+                                        </div>
+                                        <p class="job-description">Crushding Studio is an affordable studio that turns your ideas into reality on affordable price.</p>
+                                        <ul class="job-achievements">
+                                            <li>Successfully built prototypes for various projects based on clients' specific demands, collaborating closely with them to ensure that their requirements were met</li>
+                                            <li>Developed dynamic data visualization tools (charts, graphs, heatmaps) to simplify analysis of industrial datasets, improving decision-making.</li>    
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Education Section -->
+                   
+                    
+                    
+                    <!-- Contact Section -->
+                    <section id="contact" class="content-section">
+                        <div class="section-header">
+                            <h2 class="typing-header">root@kali:~# <span class="command">echo "Hello" | mail -s "Contact" vsalgc369@gmail.com</span></h2>
+                        </div>
+                        <div class="contact-container scroll-reveal">
+                            <h3 class="section-title">Get In Touch</h3>
+                            
+                            <div class="contact-content">
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div>
+                                            <h4>Email</h4>
+                                            <p>vsalgc369@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div>
+                                            <h4>Phone</h4>
+                                            <p>+977 9842810768</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                    
+                                    </div>
+                                    <div class="social-links">
+                                        <a href="https://www.linkedin.com/in/vsal-gc-5b048635a/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <form class="contact-form">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" id="subject" name="subject" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Terminal CLI Section -->
+                    <section id="terminal-cli" class="content-section">
+                        <div class="section-header">
+                            <h2 class="typing-header">root@kali:~# <span class="command">./interactive_terminal.sh</span></h2>
+                        </div>
+                        <div class="terminal-cli-container scroll-reveal">
+                            <div class="terminal-cli">
+                                <div class="terminal-output" id="terminal-output">
+                                    <div>Welcome to the portfolio terminal. Type "help" for available commands.</div>
+                                </div>
+                                <div class="terminal-input-line">
+                                    <span class="prompt">visitor@portfolio:~$</span>
+                                    <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command...">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
